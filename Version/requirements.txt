@@ -1,0 +1,22 @@
+# Python 3.10, conda env "AIoT"
+# Install: pip install -r Version/requirements.txt
+
+# Camera / core
+numpy>=2.0
+opencv-python>=4.8
+
+# RL simulator (Version/RL, Phase 1)
+gymnasium>=1.0
+pygame>=2.5
+matplotlib>=3.8
+pyyaml>=6.0
+pytest>=8.0
+
+# RL training (Phase 2)
+torch>=2.2              # large (~300 MB); uses Apple MPS when available
+stable-baselines3>=2.3
+tensorboard>=2.15
+
+# Real YOLO bridge (Phase 3)
+ultralytics>=8.3
+requests>=2.31          # sending actions to the device over HTTP
